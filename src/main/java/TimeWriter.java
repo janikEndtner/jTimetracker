@@ -73,7 +73,7 @@ public class TimeWriter {
 	}
 
 	private String itemToString(StartEndItem item) {
-		return item.getStart().format(formatter) + " - " + item.getEnd().format(formatter);
+		return item.getStart().format(formatter) + " - " + item.getEnd().format(formatter) + "\n";
 	}
 
 	private StartEndItem parseLine(String line) {

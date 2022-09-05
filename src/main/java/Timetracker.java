@@ -5,7 +5,7 @@ import static java.lang.Thread.sleep;
 
 public final class Timetracker {
 
-	private static final long CHECK_EVERY_MS = 1000*5*1;
+	private static final long CHECK_EVERY_MS = 1000*60*1;
 	private static final long  MAX_ALLOWED_BREAK_MS = 1000*60*5;
 	private static final String FORMAT = "HH:mm:ss";
 	private static final String ABS_PATH = "C:/Users/enja/IdeaProjects/timetracker/logs/";

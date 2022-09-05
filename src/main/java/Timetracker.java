@@ -20,8 +20,8 @@ public final class Timetracker {
 			GlobalScreen.registerNativeHook();
 		}
 		catch (NativeHookException ex) {
-			System.err.println("There was a problem registering the native hook.");
-			System.err.println(ex.getMessage());
+			Logger.err("There was a problem registering the native hook.");
+			Logger.err(ex.getMessage());
 
 			System.exit(1);
 		}

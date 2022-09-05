@@ -29,7 +29,7 @@ public class TimeWriter {
 		try {
 			boolean fileCreated = file.createNewFile();
 			if (fileCreated) {
-				System.out.println("File created");
+				Logger.log("File created");
 			}
 		} catch (IOException e) {
 			throw new RuntimeException("file creation failed", e);

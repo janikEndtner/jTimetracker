@@ -15,10 +15,10 @@ public class ActivityChecker {
 	public void checkActivity() {
 		if (activeSinceLastCheck) {
 			now = LocalDateTime.now();
-			System.out.println("User was active.");
+			Logger.log("User was active.");
 			writer.writeLogs();
 		} else {
-			System.out.println("Not active");
+			Logger.log("Not active");
 		}
 		activeSinceLastCheck = false;
 	}
